@@ -1,3 +1,3 @@
-# Angular Udemy Course 
+# Angular Udemy Course
 
-- All components services and models goes to app folder  
+- All components services and models goes to app folder
