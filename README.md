@@ -44,3 +44,7 @@
   - compiles .ts to .js
   - installed with npm
   - used by **angular**
+
+### Components
+
+![](https://github.com/mfsiat/Udemy-Angular-Course-/blob/master/assets/components.PNG)
