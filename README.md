@@ -24,6 +24,14 @@
 
 - main.ts >> AppModules >> app.module.ts >> main appComponent gets bootstrapped from app.component
 
+### What will we learn
+
+![](https://github.com/mfsiat/Udemy-Angular-Course-/blob/master/assets/we_will_learn.PNG)
+
+### Core Features
+
+![](https://github.com/mfsiat/Udemy-Angular-Course-/blob/master/assets/core_features.PNG)
+
 ### TypeScript
 
 - **superset** of JS
