@@ -107,3 +107,32 @@ export class UserComponet {
     }
   }
 ```
+- Types in **typescript**, we can also assign types to function parameters in return values
+```typescript
+export class UserComponet {
+  // properties
+  foo: any;  
+  hasKid: boolean;
+  numberArray: number[];
+  stringArray: string[];
+  // mixed array
+  mixedArray: any[];
+  myTuple: [string, number, boolean];
+
+  // method
+  constructor() {
+    this.foo = true;
+    this.hasKid = false;
+    this.numberArray = [1,2,3];
+    this.stringArray = ['hello', 'world'];
+    this.mixedArray = [true, undefined, 'hello'];
+    this.myTuple = ['hello', 4, true];
+
+    console.log(this.addNumbers(2, 3));
+  }
+
+  addNumbers(num1: number, num2: number): number {
+    return num1+num2;
+  }
+}
+```

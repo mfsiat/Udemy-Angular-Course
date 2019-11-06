@@ -15,6 +15,16 @@ export class UserComponet {
   // this is an object literal
   address;
 
+  // this is another type 
+  // it's called any, means it can be anything  
+  foo: any;  
+  hasKid: boolean;
+  numberArray: number[];
+  stringArray: string[];
+  // mixed array
+  mixedArray: any[];
+  myTuple: [string, number, boolean];
+
   // Methods
   constructor() {
     // this.sayHello(); // passing in the method
@@ -33,6 +43,15 @@ export class UserComponet {
       city: 'Dhaka',
       country: 'Bangladesh'
     }
+
+    this.foo = true;
+    this.hasKid = false;
+    this.numberArray = [1,2,3];
+    this.stringArray = ['hello', 'world'];
+    this.mixedArray = [true, undefined, 'hello'];
+    this.myTuple = ['hello', 4, true];
+
+    console.log(this.addNumbers(2, 3));
   }
 
   // sayHello() {
@@ -46,5 +65,9 @@ export class UserComponet {
   // we can also use methods for string interpolation 
   showAge() {
     return this.age+2;
+  }
+
+  addNumbers(num1: number, num2: number): number{
+    return num1+num2;
   }
 }
