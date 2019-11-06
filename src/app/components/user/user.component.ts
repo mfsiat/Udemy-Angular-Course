@@ -8,15 +8,12 @@ import { Component } from "@angular/core";
 })
 export class UserComponet {
   // Properties
-  firstName = "Nasirul";
-  lastName = "Islam";
-  age = 30;
+  // firstName = "Nasirul";
+  firstName : string; // using types and calling from constructor 
+  lastName : string;
+  age : number;
   // this is an object literal
-  address = {
-    street: "214/B Tejkuni Para",
-    city: "Dhaka",
-    state: "Bangladesh"
-  };
+  address;
 
   // Methods
   constructor() {
@@ -25,6 +22,17 @@ export class UserComponet {
     // console.log(this.age);
     // this.hasBirthday(); // caling the hasBirthday() function
     // console.log(this.age); // calling it again
+
+    // Using Types
+    this.firstName = 'Nasirul';
+    this.lastName = 'Islam';
+    this.age = 24;
+
+    this.address = {
+      street: '214/B',
+      city: 'Dhaka',
+      country: 'Bangladesh'
+    }
   }
 
   // sayHello() {
