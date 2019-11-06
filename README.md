@@ -78,3 +78,5 @@ export class UserComponet {
 ```
 
 ### String interpolation
+
+- we use double curli braces for string interpolation like **{{}}**
