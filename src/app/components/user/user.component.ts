@@ -34,4 +34,9 @@ export class UserComponet {
   // hasBirthday() {
   //   this.age += 1;
   // }
+
+  // we can also use methods for string interpolation 
+  showAge() {
+    return this.age+2;
+  }
 }
