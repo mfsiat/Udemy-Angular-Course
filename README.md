@@ -81,6 +81,29 @@ export class UserComponet {
 
 - we use double curli braces for string interpolation like **{{}}**
 
-### Using types 
+### Using types
 
-- 
+- First we need to define this types on properties
+- then we declare them on constructor
+- and call them from the html file
+
+```typescript
+  firstName : string; // using types and calling from constructor
+  lastName : string;
+  age : number;
+  address;
+
+  // Methods
+  constructor() {
+    // Using Types
+    this.firstName = 'Nasirul';
+    this.lastName = 'Islam';
+    this.age = 24;
+
+    this.address = {
+      street: '214/B',
+      city: 'Dhaka',
+      country: 'Bangladesh'
+    }
+  }
+```
