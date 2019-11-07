@@ -186,3 +186,26 @@ interface User {
   > ng g c components/users --spec=false
 
 - here **g** stands for **genarate** **c** for **component** and **--spec=false** for not creating the .spec files.
+
+### LifeCycle Method
+
+- we can also use the life cycle method to implement interface only by using some specfic ways.
+  > first import the OnInit
+  > then create a method outside the constructor and just add the properties.
+
+  ``` typescript
+  import { Component, OnInit } from "@angular/core";
+
+  ngOnInit() {
+    this.user = {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 26,
+      address: {
+        street: '214/B',
+        city: 'Dhaka',
+        country: 'Bangladesh'
+      }
+    }
+  }
+  ```

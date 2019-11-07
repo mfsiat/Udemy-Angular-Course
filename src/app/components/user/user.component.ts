@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 import { User } from '../../models/User';
 
@@ -8,13 +8,17 @@ import { User } from '../../models/User';
   styleUrls: ["./user.component.css"]
   // template: '<h2>John Doe</h2>'
 })
-export class UserComponet {
+export class UserComponet implements OnInit {
   // Properties 
   // Here we are calling it from User interface
   user: User;
 
   // Methods
   constructor() {
+
+  }
+
+  ngOnInit() {
     this.user = {
       firstName: 'John',
       lastName: 'Doe',
@@ -25,6 +29,7 @@ export class UserComponet {
         country: 'Bangladesh'
       }
     }
+
   }
 }
 
