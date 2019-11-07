@@ -1,5 +1,7 @@
 import { Component } from "@angular/core";
 
+import { User } from '../../models/User';
+
 @Component({
   selector: "app-user",
   templateUrl: "./user.component.html",
@@ -42,18 +44,6 @@ export class UserComponet {
       }
     }
   }
-}
-
-interface User {
-  firstName: string,
-  lastName: string,
-  age: number,
-  address: {
-    street: string,
-    city: string,
-    country: string
-  }
-
 }
 
   // This is previuos constructor data 
