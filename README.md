@@ -185,4 +185,4 @@ interface User {
 
   > ng g c components/users --spec=false
 
-- here g stands for genarate c for component and --spec=false for not creating the .spec files.
+- here **g** stands for **genarate** **c** for **component** and **--spec=false** for not creating the .spec files.
