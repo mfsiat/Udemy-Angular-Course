@@ -177,4 +177,12 @@ interface User {
 ```
 
 - But to write good codes we need to place the interface separately
-- We can create a model folder and place our interface on there 
+- We can create a model folder and place our interface on there
+
+### How to create a component manually
+
+- we can use the cli to create component manually
+
+  > ng g c components/users --spec=false
+
+- here g stands for genarate c for component and --spec=false for not creating the .spec files.
