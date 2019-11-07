@@ -29,7 +29,6 @@ export class UserComponet implements OnInit {
         country: 'Bangladesh'
       }
     }
-
   }
 }
 
