@@ -107,11 +107,13 @@ export class UserComponet {
     }
   }
 ```
+
 - Types in **typescript**, we can also assign types to function parameters in return values
+
 ```typescript
 export class UserComponet {
   // properties
-  foo: any;  
+  foo: any;
   hasKid: boolean;
   numberArray: number[];
   stringArray: string[];
@@ -123,16 +125,56 @@ export class UserComponet {
   constructor() {
     this.foo = true;
     this.hasKid = false;
-    this.numberArray = [1,2,3];
-    this.stringArray = ['hello', 'world'];
-    this.mixedArray = [true, undefined, 'hello'];
-    this.myTuple = ['hello', 4, true];
+    this.numberArray = [1, 2, 3];
+    this.stringArray = ["hello", "world"];
+    this.mixedArray = [true, undefined, "hello"];
+    this.myTuple = ["hello", 4, true];
 
     console.log(this.addNumbers(2, 3));
   }
 
   addNumbers(num1: number, num2: number): number {
-    return num1+num2;
+    return num1 + num2;
   }
 }
 ```
+
+### Interface
+
+- To declare interface we can follow the following
+
+```typescript
+export class userComponent {
+  // properties
+  user: User;
+
+  // method
+  constructor() {
+    this.user = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 26,
+      address: {
+        street: "214/B",
+        city: "Dhaka",
+        country: "Bangladesh"
+      }
+    };
+  }
+}
+
+// interface
+interface User {
+  firstName: string;
+  lastName: string;
+  age: number;
+  address: {
+    street: string;
+    city: string;
+    country: string;
+  };
+}
+```
+
+- But to write good codes we need to place the interface separately
+- We can create a model folder and place our interface on there 

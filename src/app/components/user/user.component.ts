@@ -25,34 +25,63 @@ export class UserComponet {
   // mixedArray: any[];
   // myTuple: [string, number, boolean];
 
+  // Properties 
+  // Here we are calling it from User interface
+  user: User;
+
   // Methods
   constructor() {
-    // this.sayHello(); // passing in the method
-    // // Lets declare another method
-    // console.log(this.age);
-    // this.hasBirthday(); // caling the hasBirthday() function
-    // console.log(this.age); // calling it again
-
-    // Using Types
-    // this.firstName = 'Nasirul';
-    // this.lastName = 'Islam';
-    // this.age = 24;
-
-    // this.address = {
-    //   street: '214/B',
-    //   city: 'Dhaka',
-    //   country: 'Bangladesh'
-    // }
-
-    // this.foo = true;
-    // this.hasKid = false;
-    // this.numberArray = [1,2,3];
-    // this.stringArray = ['hello', 'world'];
-    // this.mixedArray = [true, undefined, 'hello'];
-    // this.myTuple = ['hello', 4, true];
-
-    // console.log(this.addNumbers(2, 3));
+    this.user = {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 26,
+      address: {
+        street: '214/B',
+        city: 'Dhaka',
+        country: 'Bangladesh'
+      }
+    }
   }
+}
+
+interface User {
+  firstName: string,
+  lastName: string,
+  age: number,
+  address: {
+    street: string,
+    city: string,
+    country: string
+  }
+
+}
+
+  // This is previuos constructor data 
+  // this.sayHello(); // passing in the method
+  // // Lets declare another method
+  // console.log(this.age);
+  // this.hasBirthday(); // caling the hasBirthday() function
+  // console.log(this.age); // calling it again
+
+  // Using Types
+  // this.firstName = 'Nasirul';
+  // this.lastName = 'Islam';
+  // this.age = 24;
+
+  // this.address = {
+  //   street: '214/B',
+  //   city: 'Dhaka',
+  //   country: 'Bangladesh'
+  // }
+
+  // this.foo = true;
+  // this.hasKid = false;
+  // this.numberArray = [1,2,3];
+  // this.stringArray = ['hello', 'world'];
+  // this.mixedArray = [true, undefined, 'hello'];
+  // this.myTuple = ['hello', 4, true];
+
+  // console.log(this.addNumbers(2, 3));
 
   // sayHello() {
   //   console.log(`Hello ${this.firstname} ${this.lastName}`);
@@ -70,4 +99,3 @@ export class UserComponet {
   // addNumbers(num1: number, num2: number): number{
   //   return num1+num2;
   // }
-}
