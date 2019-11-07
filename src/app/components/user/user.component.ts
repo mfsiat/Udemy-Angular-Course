@@ -9,21 +9,21 @@ import { Component } from "@angular/core";
 export class UserComponet {
   // Properties
   // firstName = "Nasirul";
-  firstName : string; // using types and calling from constructor 
-  lastName : string;
-  age : number;
-  // this is an object literal
-  address;
+  // firstName : string; // using types and calling from constructor 
+  // lastName : string;
+  // age : number;
+  // // this is an object literal
+  // address;
 
-  // this is another type 
-  // it's called any, means it can be anything  
-  foo: any;  
-  hasKid: boolean;
-  numberArray: number[];
-  stringArray: string[];
-  // mixed array
-  mixedArray: any[];
-  myTuple: [string, number, boolean];
+  // // this is another type 
+  // // it's called any, means it can be anything  
+  // foo: any;  
+  // hasKid: boolean;
+  // numberArray: number[];
+  // stringArray: string[];
+  // // mixed array
+  // mixedArray: any[];
+  // myTuple: [string, number, boolean];
 
   // Methods
   constructor() {
@@ -34,24 +34,24 @@ export class UserComponet {
     // console.log(this.age); // calling it again
 
     // Using Types
-    this.firstName = 'Nasirul';
-    this.lastName = 'Islam';
-    this.age = 24;
+    // this.firstName = 'Nasirul';
+    // this.lastName = 'Islam';
+    // this.age = 24;
 
-    this.address = {
-      street: '214/B',
-      city: 'Dhaka',
-      country: 'Bangladesh'
-    }
+    // this.address = {
+    //   street: '214/B',
+    //   city: 'Dhaka',
+    //   country: 'Bangladesh'
+    // }
 
-    this.foo = true;
-    this.hasKid = false;
-    this.numberArray = [1,2,3];
-    this.stringArray = ['hello', 'world'];
-    this.mixedArray = [true, undefined, 'hello'];
-    this.myTuple = ['hello', 4, true];
+    // this.foo = true;
+    // this.hasKid = false;
+    // this.numberArray = [1,2,3];
+    // this.stringArray = ['hello', 'world'];
+    // this.mixedArray = [true, undefined, 'hello'];
+    // this.myTuple = ['hello', 4, true];
 
-    console.log(this.addNumbers(2, 3));
+    // console.log(this.addNumbers(2, 3));
   }
 
   // sayHello() {
@@ -63,11 +63,11 @@ export class UserComponet {
   // }
 
   // we can also use methods for string interpolation 
-  showAge() {
-    return this.age+2;
-  }
+  // showAge() {
+  //   return this.age+2;
+  // }
 
-  addNumbers(num1: number, num2: number): number{
-    return num1+num2;
-  }
+  // addNumbers(num1: number, num2: number): number{
+  //   return num1+num2;
+  // }
 }
