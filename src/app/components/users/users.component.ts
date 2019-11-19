@@ -11,6 +11,7 @@ export class UsersComponent implements OnInit {
   users: User[];
   constructor() { }
 
+  // defining the user inside the ngOnIt
   ngOnInit() {
     this.users = [
       {
@@ -24,26 +25,26 @@ export class UsersComponent implements OnInit {
         }
       },
       {
-        firstName: 'John',
-        lastName: 'Doe',
-        age: 26,
+        firstName: 'Kevin',
+        lastName: 'Johnson',
+        age: 34,
         address: {
-          street: '214/B',
+          street: '214/A',
           city: 'Dhaka',
           country: 'Bangladesh'
         }
       },
       {
-        firstName: 'John',
-        lastName: 'Doe',
+        firstName: 'Wasif',
+        lastName: 'Shikder',
         age: 26,
         address: {
-          street: '214/B',
+          street: '214/C',
           city: 'Dhaka',
           country: 'Bangladesh'
         }
       }
-    ]
+    ];
   }
 
 }

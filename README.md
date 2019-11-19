@@ -209,3 +209,8 @@ interface User {
     }
   }
   ```
+
+### Template Syntax
+
+- basicaly adds logic 
+- 
