@@ -214,6 +214,9 @@ interface User {
 
 - basicaly adds logic 
 - there are many template syntax in **Angular**
+- here we always should specify the property with its type suppose 
+> users: User[] 
+- here this means that **users** is User[] type and the bracket means it is an array
 - for **ngFor**
 ```html
 <!-- here we are looping through the users array 
