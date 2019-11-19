@@ -9,7 +9,7 @@ import { User } from '../../models/User';
 })
 export class UsersComponent implements OnInit {
   users: User[];
-  showExtend: 
+  showExtended:  boolean = true;
 
   constructor() { }
 
@@ -47,6 +47,8 @@ export class UsersComponent implements OnInit {
         }
       }
     ];
+
+    this.showExtended = false; // this means on ngIf it goes false and ul doesn't show
 
     this.addUser(
       {

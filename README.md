@@ -228,3 +228,5 @@ and we are outputting the firstName -->
   </li>
 </ul>
 ```
+- For defining a custom template we write <ng-template #noUser></ng-template>
+- to define a logic we use **'*'**
