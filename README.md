@@ -213,4 +213,15 @@ interface User {
 ### Template Syntax
 
 - basicaly adds logic 
-- 
+- there are many template syntax in **Angular**
+- for **ngFor**
+```html
+<!-- here we are looping through the users array 
+and we are outputting the firstName -->
+<h2>Users</h2>
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.firstName }}
+  </li>
+</ul>
+```

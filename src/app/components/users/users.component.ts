@@ -45,6 +45,25 @@ export class UsersComponent implements OnInit {
         }
       }
     ];
+
+    this.addUser(
+      {
+        firstName: 'Sujon',
+        lastName: 'Hossain',
+        age: 26,
+        address: {
+          street: '214/D',
+          city: 'Dhaka',
+          country: 'Bangladesh'
+        }
+      }
+    );
+  }
+
+  // just a normal method on js which pushes objects inside the array 
+  // takes in user which is the type of User
+  addUser(user: User) {
+    this.users.push(user);
   }
 
 }
