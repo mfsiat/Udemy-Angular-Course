@@ -10,7 +10,10 @@ import { User } from '../../models/User';
 export class UsersComponent implements OnInit {
   users: User[];
   showExtended:  boolean = true;
-
+  // suppose we are working with api 
+  // or we need to fetch some data 
+  // so we want to check on the users fetched or not so we can use this 
+  
   constructor() { }
 
   // defining the user inside the ngOnIt
