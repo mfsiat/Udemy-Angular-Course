@@ -238,3 +238,8 @@ and we are outputting the firstName -->
 > setTimeout(() => { }, 2000);
 
 - To make some arguments or data optional we can simply type '?' 
+
+### Adding Bootstrap
+
+- we can add bootstrap with cdn inside the html file. 
+- we will be installing bootstrap using npm. 
