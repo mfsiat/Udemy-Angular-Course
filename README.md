@@ -229,4 +229,12 @@ and we are outputting the firstName -->
 </ul>
 ```
 - For defining a custom template we write <ng-template #noUser></ng-template>
-- to define a logic we use **'*'**
+- to define a template syntax we use **'*'**
+- we can also define the template syntax with some arguments or properties on the .ts files. then we can call them from the html file. 
+
+- suppose we want to put a loading screen or a circle on our webpage, which will be indicating the response or the loading time for our page or our request o the server. so we can use this template syntax and we can easily call them. 
+
+- we just need to use this function inside the ngOnInit() { }
+> setTimeout(() => { }, 2000);
+
+- To make some arguments or data optional we can simply type '?' 
