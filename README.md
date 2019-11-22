@@ -243,3 +243,4 @@ and we are outputting the firstName -->
 
 - we can add bootstrap with cdn inside the html file. 
 - we will be installing bootstrap using npm. 
+- we can add styles in angular.json file
