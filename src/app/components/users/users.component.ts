@@ -15,6 +15,8 @@ export class UsersComponent implements OnInit {
   // so we want to check on the users fetched or not so we can use this 
   loaded: boolean = false;
   enableAdd: boolean = true;
+  currentClasses = {};
+
   constructor() { }
 
   // defining the user inside the ngOnIt
@@ -30,7 +32,8 @@ export class UsersComponent implements OnInit {
             city: 'Dhaka',
             country: 'Bangladesh'
           },
-          image: 'http://lorempixel.com/600/600/people/3'
+          image: 'http://lorempixel.com/600/600/people/3',
+          isActive: true
         },
         {
           firstName: 'Kevin',
@@ -41,7 +44,8 @@ export class UsersComponent implements OnInit {
             city: 'Dhaka',
             country: 'Bangladesh'
           },
-          image: 'http://lorempixel.com/600/600/people/4'
+          image: 'http://lorempixel.com/600/600/people/4',
+          isActive: false
         },
         {
           firstName: 'Wasif',
@@ -52,11 +56,15 @@ export class UsersComponent implements OnInit {
             city: 'Dhaka',
             country: 'Bangladesh'
           },
-          image: 'http://lorempixel.com/600/600/people/1'
+          image: 'http://lorempixel.com/600/600/people/1',
+          isActive: false
         }
       ];
       
       this.loaded = true;
+
+      this.setCurrentClasses();
+
 
     }, 2000);
 
@@ -83,6 +91,13 @@ export class UsersComponent implements OnInit {
   // push doesn't work
   addUser(user: User) {
     this.users.push(user);
+  }
+
+  setCurrentClasses() {
+    this.currentClasses = {
+      'btn-success': this.enableAdd,
+      'big-text': this.showExtended
+    }
   }
 
 }
