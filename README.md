@@ -255,11 +255,11 @@ and we are outputting the firstName -->
 - we can add property binding just by simply '[]' and put our property binding attributes inside of it.
 - like we want to add an image url in our interface so we can easily use this.
 - Multiple ways to property binding
-  > <img class="img-fluid" [src]="user.image" alt="">
+  > img class="img-fluid" [src]="user.image" alt=""
 
-  > <img class="img-fluid" src={{user.image}} alt="">
+  > img class="img-fluid" src={{user.image}} alt=""
 
-  > <img class="img-fluid" bind-src="user.image" alt="">
+  > img class="img-fluid" bind-src="user.image" alt=""
 
 
 ### Class Binding ngClass
