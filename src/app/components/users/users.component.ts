@@ -14,6 +14,7 @@ export class UsersComponent implements OnInit {
   // or we need to fetch some data 
   // so we want to check on the users fetched or not so we can use this 
   loaded: boolean = false;
+  enableAdd: boolean = true;
   constructor() { }
 
   // defining the user inside the ngOnIt

@@ -190,10 +190,11 @@ interface User {
 ### LifeCycle Method
 
 - we can also use the life cycle method to implement interface only by using some specfic ways.
+
   > first import the OnInit
   > then create a method outside the constructor and just add the properties.
 
-  ``` typescript
+  ```typescript
   import { Component, OnInit } from "@angular/core";
 
   ngOnInit() {
@@ -212,12 +213,13 @@ interface User {
 
 ### Template Syntax
 
-- basicaly adds logic 
+- basicaly adds logic
 - there are many template syntax in **Angular**
-- here we always should specify the property with its type suppose 
-> users: User[] 
+- here we always should specify the property with its type suppose
+  > users: User[]
 - here this means that **users** is User[] type and the bracket means it is an array
 - for **ngFor**
+
 ```html
 <!-- here we are looping through the users array 
 and we are outputting the firstName -->
@@ -228,19 +230,27 @@ and we are outputting the firstName -->
   </li>
 </ul>
 ```
-- For defining a custom template we write <ng-template #noUser></ng-template>
-- to define a template syntax we use **'*'**
-- we can also define the template syntax with some arguments or properties on the .ts files. then we can call them from the html file. 
 
-- suppose we want to put a loading screen or a circle on our webpage, which will be indicating the response or the loading time for our page or our request o the server. so we can use this template syntax and we can easily call them. 
+- For defining a custom template we write <ng-template #noUser></ng-template>
+- to define a template syntax we use **'\*'**
+- we can also define the template syntax with some arguments or properties on the .ts files. then we can call them from the html file.
+
+- suppose we want to put a loading screen or a circle on our webpage, which will be indicating the response or the loading time for our page or our request o the server. so we can use this template syntax and we can easily call them.
 
 - we just need to use this function inside the ngOnInit() { }
-> setTimeout(() => { }, 2000);
 
-- To make some arguments or data optional we can simply type '?' 
+  > setTimeout(() => { }, 2000);
+
+- To make some arguments or data optional we can simply type '?'
 
 ### Adding Bootstrap
 
-- we can add bootstrap with cdn inside the html file. 
-- we will be installing bootstrap using npm. 
+- we can add bootstrap with cdn inside the html file.
+- we will be installing bootstrap using npm.
 - we can add styles in angular.json file
+
+### Property binding
+
+- to have dynamic attributes. 
+- we can add property binding just by simply '[]' and put our property binding attributes inside of it. 
+- like we want to add an image url in our interface so we can easily use this. 
