@@ -6,7 +6,8 @@ export interface User {
     street?: string,
     city?: string,
     country?: string
-  }
+  },
+  image?: string
 }
 
 // '?' means they are optional 
