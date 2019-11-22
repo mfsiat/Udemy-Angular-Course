@@ -29,7 +29,8 @@ export class UsersComponent implements OnInit {
             street: '214/B',
             city: 'Dhaka',
             country: 'Bangladesh'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/3'
         },
         {
           firstName: 'Kevin',
@@ -39,7 +40,8 @@ export class UsersComponent implements OnInit {
             street: '214/A',
             city: 'Dhaka',
             country: 'Bangladesh'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/4'
         },
         {
           firstName: 'Wasif',
@@ -49,7 +51,8 @@ export class UsersComponent implements OnInit {
             street: '214/C',
             city: 'Dhaka',
             country: 'Bangladesh'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/1'
         }
       ];
       
@@ -76,6 +79,8 @@ export class UsersComponent implements OnInit {
 
   // just a normal method on js which pushes objects inside the array 
   // takes in user which is the type of User
+  // when we use timeout function, our underlined function 
+  // push doesn't work
   addUser(user: User) {
     this.users.push(user);
   }
