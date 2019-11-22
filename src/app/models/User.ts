@@ -7,7 +7,8 @@ export interface User {
     city?: string,
     country?: string
   },
-  image?: string
+  image?: string,
+  isActive?: boolean
 }
 
 // '?' means they are optional 
